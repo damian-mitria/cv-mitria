@@ -1,0 +1,188 @@
+:root {
+  --color-claro: #44586a;
+  --color-oscuro: #334657;
+}
+
+body {
+    background-color: hwb(0 100% 0%);
+    font-family: 'League Spartan', sans-serif !important;
+  }
+
+.font-titulo {
+  font-size: 80px;
+  font-weight: 900;
+}
+
+@media (min-width: 768px) {
+  .col-md-5 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-md-7 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .img-stretch {
+    transform: scale(1.85);
+  }
+}
+
+
+
+
+#content {
+  width: 100%;
+  text-align: center;
+  margin-top: 162px;
+  white-space: nowrap;
+}
+
+#content input {
+  width: 560px;
+  padding: 4px 9px;
+  margin-bottom: 16px;
+  font: 16px arial, sans-serif;
+  border: 1px solid #d9d9d9;
+  border-top-color: #c0c0c0;
+  color: #000000;
+}
+
+
+
+  .bg-claro {
+    background: var(--color-claro);
+  }
+
+  .bg-oscuro{
+    background: var(--color-oscuro);
+  }
+
+
+/*Carga de pagina*/
+  .pre-loader {
+    background: #fff;
+    background-position: center center;
+    background-size: 13%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 12345;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .pre-loader .loader-logo {
+    padding-bottom: 15px;
+  }
+  .pre-loader .loader-progress {
+    height: 8px;
+    border-radius: 15px;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+    background: #ecf0f4;
+    overflow: hidden;
+  }
+  .pre-loader .bar {
+    width: 0%;
+    height: 8px;
+    display: block;
+    background: var(--color-oscuro);
+  }
+  .pre-loader .percent {
+    text-align: center;
+    font-size: 24px;
+    display: none;
+  }
+  .pre-loader .loading-text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 15px;
+  }
+
+
+/*Barra de Progreso*/
+  .progress-bar {
+    height: 10px;
+    width: 200px;
+    background-color: #ccc;
+    border-radius: 5px;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: var(--color-oscuro);
+    border-radius: 5px;
+  }
+
+  .igualador{
+    width: 115px;
+  }
+
+  .line {
+    width: 70%;
+    height: 5px;
+    background-color: var(--color-oscuro);
+  }
+
+  .fondo{
+    background-color: rgb(174, 174, 174);
+  }
+
+
+
+/* 2
+#miBoton{
+  position: fixed!important;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+}
+*/  
+
+#hola {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 5px;
+  background-color: red;
+  border-radius: 50%;
+  border-color: #000000;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#hola:hover{
+  background-color: rgb(215, 75, 75);
+}
+
+#chau {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 50px;
+  background-color: rgb(43, 177, 43);
+  border-radius: 50%;
+  border-color: #000000;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1;
+  color: #ffffff;
+}
+
+
